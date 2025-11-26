@@ -1696,14 +1696,15 @@ function HajjGame() {
               </div>
             </div>
 
-            <div className="prize-placeholder">
-              <div className="prize-icon">🎁</div>
-              <div className="prize-text">
-                {currentLang === 'ar' ? 
-                  '🎉 مبروك! اعرض نتيجتك في جناح Smart Hajj للحصول على جائزتك!' :
-                  '🎉 Congrats! Show your result at Smart Hajj booth to claim your prize!'}
-              </div>
-            </div>
+           <div className="prize-placeholder">
+  <div className="prize-icon">🎁</div>
+  <div className="prize-text">
+    {currentLang === 'ar' ? 
+      `🎉 مبروك ${playerName}! اعرض نتيجتك في جناح Smart Hajj للحصول على جائزتك!` :
+      `🎉 Congrats ${playerName}! Show your result at Smart Hajj booth to claim your prize!`}
+  </div>
+</div>
+
 
             <button className="btn" onClick={() => window.open('https://smarthajj.streamlit.app', '_blank')}>
               {lang.learnBtn}
