@@ -1110,12 +1110,7 @@ h1 {
     color: white;
     border: none;
     padding: 12px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 10px;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+);
 }
 
 .copy-btn:hover {
@@ -1480,6 +1475,9 @@ function HajjGame() {
       playAgainBtn: "🔄 العب مرة أخرى",
       streak: "🔥 رائع! إجابتان صحيحتان متتاليتان!",
       fast: "⚡ سريع جداً!",
+      // Header texts
+      subtitle: "اختبر معرفتك في التمييز بين الحملات المعتمدة والوهمية",
+      headerBadge: "🛡️ حماية الحجاج من الاحتيال",
       // Promotion screen
       promoTitle: "الآن بإمكانك حماية نفسك مع",
       promoHighlight: "Smart Hajj",
@@ -1511,6 +1509,9 @@ function HajjGame() {
       playAgainBtn: "🔄 Play Again",
       streak: "🔥 Amazing! 2 Correct Answers!",
       fast: "⚡ Lightning Fast!",
+      // Header texts
+      subtitle: "Test your knowledge in distinguishing between approved and fake campaigns",
+      headerBadge: "🛡️ Protecting Pilgrims from Fraud",
       // Promotion screen
       promoTitle: "Now you can protect yourself with",
       promoHighlight: "Smart Hajj",
@@ -1618,8 +1619,8 @@ function HajjGame() {
           <span>{lang.title}</span>{' '}
           <span className="title-highlight">{lang.titleHighlight}</span>
         </h1>
-        <p className="subtitle">اختبر معرفتك في التمييز بين الحملات المعتمدة والوهمية</p>
-        <div className="header-badge">🛡️ حماية الحجاج من الاحتيال</div>
+        <p className="subtitle">{lang.subtitle}</p>
+        <div className="header-badge">{lang.headerBadge}</div>
       </div>
 
       <div className="content">
